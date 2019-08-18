@@ -10,15 +10,15 @@ type Props = {
   children: React.Node,
 }
 
-export default (visibleClassName: string, hiddenClassName: string) => {
+export default (visibleClass: string, hiddenClass: string) => {
   const Visibility = ({ visibility, children }: Props) => {
     let className
     switch (visibility) {
       case 'visible':
-        className = visibleClassName
+        className = visibleClass
         break
       case 'hidden':
-        className = hiddenClassName
+        className = hiddenClass
         break
     }
     return (

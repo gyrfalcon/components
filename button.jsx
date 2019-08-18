@@ -19,8 +19,8 @@ export default (buttonClass: string) => {
     children,
     disabled,
     onPress,
-  }: DataProps & ActionProps
-) => {
+  }: DataProps & ActionProps,
+  ) => {
     return (
       <button
         aria-label={ariaLabel}
@@ -28,7 +28,7 @@ export default (buttonClass: string) => {
         disabled={disabled}
         data-id={`button-${buttonId}`}
         onClick={onPress}
-        >
+      >
         {children}
       </button>
     )

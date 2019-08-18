@@ -37,7 +37,7 @@ export default (inputClassName: string, resultListStyle: string) => {
         <ul
           className={resultListStyle}
           data-id={`search-${searchId}-results`}
-          >
+        >
           {map(render, results)}
         </ul>
       </div>
